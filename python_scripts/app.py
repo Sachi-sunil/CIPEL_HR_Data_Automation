@@ -50,9 +50,9 @@ def get_mysql_connection():
     try:
         conn = mysql.connector.connect(
             host="localhost",
-            user="root",
-            password="Admin@123",
-            database="All_Data_File"
+            user="username_of_your_db",
+            password="password_of_your_db",
+            database="database_name"
         )
         return conn
     except mysql.connector.Error as err:
@@ -924,6 +924,7 @@ if __name__ == '__main__':
     print("📝 Upload files at: http://localhost:8080")
     print("📝 Upload files at: http://alldataautomation.vdartinc.com:8080/")
     app.run(debug=True, host='0.0.0.0', port=8080)
+
 
 
 
